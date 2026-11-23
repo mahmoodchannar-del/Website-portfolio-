@@ -1,2 +1,321 @@
-# Website-portfolio-
-Data analysts and BI professionals use GitHub to share .sql queries, DAX/Power BI documentation, Excel model notes, and research files in one inspectable place.
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mahmood Ali Analytics: Data analytics portfolio featuring About Me, SQL Projects, Power BI Projects, Excel Projects, and Research & Academic Projects.">
+  <meta name="theme-color" content="#101a32">
+  <title>Mahmood Ali Analytics | Data Analytics & Research Portfolio</title>
+  <style>
+    :root{--navy:#101a32;--navy2:#19294a;--ink:#17233c;--muted:#63718b;--line:#dce3ef;--bg:#f7f9fd;--teal:#17c5b3;--light:#ecfbf8;--orange:#f6b875;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible{outline:3px solid #f6b875;outline-offset:3px}::selection{background:#bff5ee;color:#10233b}
+    .container{max-width:1160px;margin:0 auto;padding:0 25px}.top{background:var(--navy);color:#fff;overflow:hidden;position:relative}.top:before{content:"";position:absolute;width:850px;height:850px;border-radius:50%;border:1px solid #ffffff10;right:-360px;top:-480px;box-shadow:0 0 0 90px #ffffff04,0 0 0 200px #ffffff03}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;position:relative;z-index:4}.brand{font-size:18px;letter-spacing:-.4px;font-weight:850;display:flex;align-items:center;gap:11px}.brandmark{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:11px;background:var(--teal);font-size:13px;color:#073038;letter-spacing:-1px}.navlinks{display:flex;gap:22px;align-items:center;flex-wrap:wrap}.navlinks a{font-size:13.5px;color:#c5d0e4;transition:color .2s}.navlinks a:hover{color:#fff}.navlinks .navcta{border:1px solid #ffffff45;color:#fff;border-radius:9px;padding:8px 14px}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:65px;align-items:center;min-height:540px;padding:50px 0 96px;position:relative}.eyebrow{color:var(--teal);font-weight:750;text-transform:uppercase;letter-spacing:.16em;font-size:12px;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:24px;height:2px;background:var(--teal)}.hero h1{font-size:clamp(38px,4.8vw,64px);line-height:1.12;letter-spacing:-2.5px;margin:22px 0 20px;font-weight:850}.hero h1 span{color:var(--teal)}.hero p{max-width:580px;color:#c4d0e6;font-size:17px;line-height:1.8;margin-bottom:30px}.buttons{display:flex;gap:13px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:11px;padding:13px 22px;border-radius:10px;font-weight:750;font-size:14px;transition:transform .2s}.btn:hover{transform:translateY(-3px)}.btn.primary{background:var(--teal);color:#092a2d}.btn.secondary{border:1px solid #ffffff50;color:white}.arrow{font-size:19px;line-height:1}.hero-art{position:relative;max-width:460px;width:100%;margin:0 auto;transform:rotate(1.5deg)}.art-panel{background:#fff;border-radius:18px;box-shadow:0 30px 70px #0005;overflow:hidden;border:8px solid #cbd5e71c}.art-title{background:#f8fbff;border-bottom:1px solid #e3eaf3;padding:16px;display:flex;align-items:center;justify-content:space-between}.art-title strong{color:#1a2945;font-size:13px}.dots{display:flex;gap:4px}.dots i{width:7px;height:7px;background:#dce5ee;border-radius:50%}.art-body{padding:20px}.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}.kpi{padding:12px;border:1px solid #ebeff5;border-radius:9px}.kpi label{display:block;width:60%;height:6px;border-radius:3px;background:#d3deeb;margin-bottom:11px}.kpi b{display:block;height:17px;width:70%;background:#c1d1df;border-radius:3px}.kpi:nth-child(2) b{background:#abede4}.kpi:nth-child(3) b{background:#ffdfb6}.plot{height:150px;background:linear-gradient(#edf2f9 1px,transparent 1px) 0 0/100% 29px;display:flex;gap:12px;align-items:end;border-bottom:1px solid #e6edf5;padding:10px 15px 0}.bar{border-radius:4px 4px 0 0;flex:1;background:linear-gradient(#43cfbe,#12a998)}.bar:nth-child(2n){background:linear-gradient(#b7c9ee,#789dd0)}.bar:nth-child(5){background:linear-gradient(#ffcd92,#efaa5b)}.art-bottom{padding:18px 2px 2px;display:flex;gap:11px}.pill{height:8px;border-radius:10px;background:#e6edf5;width:35%}.pill:nth-child(2){width:22%}.floatbadge{position:absolute;bottom:-25px;left:-45px;background:#f8fffd;padding:12px 15px;border-radius:11px;box-shadow:0 12px 30px #0003;color:#1d4b46;font-size:13px;font-weight:750;transform:rotate(-3deg);border:1px solid #c1ece5}
+    main{position:relative}.strip{background:#fff;transform:translateY(-45px);position:relative;border:1px solid #e2e8f0;box-shadow:0 16px 38px #1d365416;border-radius:14px;padding:23px 34px;display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.stripitem{display:flex;align-items:center;gap:14px;border-right:1px solid var(--line)}.stripitem:last-child{border:0}.stripicon{width:42px;height:42px;border-radius:12px;background:#e9fbf8;color:#079889;display:grid;place-items:center;font-size:21px;font-weight:800}.stripitem b{font-size:17px;display:block;line-height:1.2}.stripitem small{color:var(--muted);font-size:12px}
+    section{padding:56px 0 64px}.alt-bg{background:#edf3f9}.sectiontop{display:flex;align-items:end;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-bottom:32px}.label{color:#0c9c90;letter-spacing:.16em;font-size:12px;font-weight:850;text-transform:uppercase}.sectiontitle{font-size:clamp(28px,3.6vw,40px);font-weight:850;letter-spacing:-1.3px;line-height:1.22;margin:8px 0 10px}.sectext{color:var(--muted);max-width:650px;margin:0;font-size:15px}
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}.cards.two-col{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:#fff;border-radius:16px;border:1px solid var(--line);box-shadow:0 6px 20px #243b5410;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-5px);box-shadow:0 17px 36px #243b5425}
+    .cover{height:175px;overflow:hidden;position:relative;display:flex;align-items:end;padding:19px}.cover:before{content:"";position:absolute;border:1px solid #ffffff36;width:300px;height:300px;border-radius:50%;right:-130px;top:-190px;box-shadow:0 0 0 45px #ffffff0c,0 0 0 105px #ffffff0b}.cover.pbi{background:linear-gradient(135deg,#172948,#243e78)}.cover.excel{background:linear-gradient(135deg,#0c5e4d,#16866e)}.cover.mdcat{background:linear-gradient(135deg,#3e356c,#5354a5)}.cover.sql{background:linear-gradient(135deg,#1c3b57,#2b5876)}.coverblock{position:relative;z-index:1;width:100%;background:#ffffffeb;border-radius:8px;padding:15px;transform:rotate(-3deg);max-width:270px;box-shadow:0 9px 25px #0003}.minihead{display:flex;justify-content:space-between;margin-bottom:11px}.minihead span{width:45%;height:7px;border-radius:5px;background:#adbbcb}.minihead span:last-child{width:18%}.minichart{height:55px;display:flex;align-items:end;gap:7px}.minichart i{flex:1;border-radius:3px 3px 0 0;background:#6e98cc}.excel .minichart i{background:#3baf96}.mdcat .minichart i{background:#8b83d8}.sql .minichart i{background:#4da1a9}.minifoot{height:6px;border-radius:5px;background:#d8e1ea;margin-top:10px;width:80%}.cover .labelchip{position:absolute;top:17px;right:16px;z-index:2;font-size:11px;font-weight:800;color:white;background:#ffffff30;border:1px solid #ffffff55;border-radius:6px;padding:5px 9px;backdrop-filter:blur(4px)}
+    .cardbody{padding:22px 22px 23px;display:flex;flex-direction:column;flex:1}.projectnum{font-size:11px;text-transform:uppercase;letter-spacing:.11em;font-weight:850;color:#0e9a8e;margin-bottom:5px}.card h3{font-size:19px;letter-spacing:-.45px;line-height:1.35;margin:5px 0 11px}.card p{font-size:14px;color:#65748c;line-height:1.7;margin:0 0 14px}
+    .insights-box{background:#f4f8fc;border-left:3px solid var(--teal);padding:10px 12px;border-radius:0 8px 8px 0;margin-bottom:18px;font-size:13px;color:#334563}.insights-box strong{color:var(--navy);display:block;margin-bottom:3px;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+    .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}.tag{background:#eef3fa;color:#49617a;font-size:11px;border-radius:6px;padding:5px 8px;font-weight:750}.cardlink{color:#087e75;font-weight:800;border-top:1px solid #edf0f5;margin-top:20px;padding-top:14px;display:flex;align-items:center;gap:6px;font-size:13px}.cardlink:hover{text-decoration:underline}
+    .sql-placeholder{background:#fff;border:1.5px dashed #b8c7d9;border-radius:16px;padding:28px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}.sql-code{background:#101a32;color:#a5f3fc;padding:18px;border-radius:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12.5px;line-height:1.6;overflow-x:auto}.sql-code .kw{color:#f6b875;font-weight:700}.sql-code .cm{color:#64748b}
+    .researchgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.paper{border:1px solid #d9e3ee;background:#fff;border-radius:14px;padding:26px;display:flex;align-items:start;gap:19px;box-shadow:0 6px 20px #243b5408}.papericon{width:45px;height:45px;border-radius:11px;background:#e5f8f4;color:#0e857a;display:grid;place-items:center;font-size:22px;flex:none}.paper small{color:#148a83;letter-spacing:.08em;text-transform:uppercase;font-weight:800;font-size:11px}.paper h3{font-size:18px;line-height:1.4;margin:8px 0}.paper p{color:var(--muted);font-size:14px;margin:0 0 14px}.paper-meta{display:inline-block;font-size:12px;font-weight:750;color:#087e75;background:#ecfbf8;padding:5px 10px;border-radius:6px}
+    .aboutgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:start}.aboutcard{background:#fff;border:1px solid #dce5ef;border-radius:16px;padding:28px;box-shadow:0 15px 30px #243b540f}.aboutcard h3{margin:0 0 15px;font-size:17px}.edu-item{border-left:2px solid var(--teal);padding-left:14px;margin-bottom:16px}.edu-item b{display:block;font-size:15px;color:var(--navy)}.edu-item span{font-size:13px;color:var(--muted)}.skillcloud{display:flex;flex-wrap:wrap;gap:9px}.skill{border:1px solid #dde6f1;background:#f8faff;border-radius:8px;font-size:12.5px;font-weight:700;padding:8px 12px;color:#445773}.about p{color:#596b84;line-height:1.85;font-size:15px}.about .aboutlist{margin-top:20px}.aboutlist p{margin:0 0 11px;display:flex;align-items:start;gap:10px}.tick{display:grid;place-items:center;border-radius:50%;width:20px;height:20px;background:#dcf7f0;color:#098c7c;flex:none;font-size:12px;font-weight:800;margin-top:5px}
+    .contactsection{padding-top:23px;padding-bottom:67px}.contactbox{background:var(--navy);color:white;padding:49px 55px;border-radius:19px;display:flex;justify-content:space-between;gap:30px;align-items:center;position:relative;overflow:hidden}.contactbox:after{content:"";position:absolute;right:-100px;bottom:-260px;width:370px;height:370px;border-radius:50%;border:60px solid #ffffff09}.contactbox h2{margin:0 0 10px;font-size:32px;letter-spacing:-.8px}.contactbox p{color:#c6d0e4;margin:0;max-width:560px}.contactbox .btn{position:relative;z-index:2;white-space:nowrap}.footer{border-top:1px solid #dae3ef;padding:27px 0 34px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#6c7890;font-size:12px}.footer a{color:#1f6189;font-weight:750}
+    @media(max-width:950px){.hero{grid-template-columns:1fr;gap:25px;padding-top:35px}.hero-art{max-width:400px;margin:40px auto 5px}.cards,.cards.two-col,.sql-placeholder{grid-template-columns:1fr}.aboutgrid{grid-template-columns:1fr;gap:28px}.strip{padding:21px}.contactbox{padding:35px}}
+    @media(max-width:650px){.container{padding:0 18px}.nav{align-items:start}.navlinks{justify-content:flex-end;gap:10px}.navlinks a{font-size:12px}.navlinks .navcta{padding:6px 10px}.brand{font-size:15px}.brandmark{width:30px;height:30px}.hero{padding-bottom:85px;min-height:auto}.hero h1{letter-spacing:-1.8px}.hero p{font-size:15px}.hero-art{margin:20px auto}.floatbadge{left:-3px}.strip{grid-template-columns:1fr;gap:16px;transform:translateY(-37px)}.stripitem{border:0;border-bottom:1px solid var(--line);padding-bottom:12px}.stripitem:last-child{padding-bottom:0}.researchgrid{grid-template-columns:1fr}.cover{height:165px}.sectiontop{align-items:start}section{padding:40px 0 48px}.contactbox{display:block;padding:30px}.contactbox h2{font-size:26px}.contactbox .btn{margin-top:25px}.footer{display:block}.footer span{display:block;margin-bottom:8px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.card{transition:none}}
+  </style>
+</head>
+<body>
+  <header class="top" id="top">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top"><span class="brandmark">MA</span> Mahmood Ali Analytics</a>
+        <div class="navlinks">
+          <a href="#about">About Me</a>
+          <a href="#sql">SQL</a>
+          <a href="#powerbi">Power BI</a>
+          <a href="#excel">Excel</a>
+          <a href="#research">Research</a>
+          <a class="navcta" href="https://github.com/mahmoodchannar-del" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Mahmood Ali Analytics · Business Informatics</div>
+          <h1>Turning complex data into <span>clear business decisions.</span></h1>
+          <p>Welcome to <strong>Mahmood Ali Analytics</strong>. I specialize in SQL querying, interactive Power BI dashboards, Excel financial &amp; operational modeling, and empirical business research.</p>
+          <div class="buttons">
+            <a href="#powerbi" class="btn primary">Explore Portfolio <span class="arrow">↗</span></a>
+            <a href="https://www.linkedin.com/in/mahmood-ali-308992435" target="_blank" rel="noopener noreferrer" class="btn secondary">Connect on LinkedIn <span class="arrow">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-panel">
+            <div class="art-title"><strong>MAHMOOD ALI ANALYTICS / KPI VIEW</strong><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="art-body"><div class="kpis"><div class="kpi"><label></label><b></b></div><div class="kpi"><label></label><b></b></div><div class="kpi"><label></label><b></b></div></div>
+              <div class="plot"><div class="bar" style="height:45%"></div><div class="bar" style="height:68%"></div><div class="bar" style="height:55%"></div><div class="bar" style="height:84%"></div><div class="bar" style="height:61%"></div><div class="bar" style="height:95%"></div><div class="bar" style="height:72%"></div><div class="bar" style="height:88%"></div></div>
+              <div class="art-bottom"><div class="pill"></div><div class="pill"></div></div>
+            </div>
+          </div>
+          <div class="floatbadge">✦ SQL · Power BI · Excel · Research</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="strip" aria-label="Portfolio highlights">
+        <div class="stripitem"><span class="stripicon">▦</span><div><b>5 Core Pillars</b><small>About, SQL, Power BI, Excel &amp; Research</small></div></div>
+        <div class="stripitem"><span class="stripicon">◫</span><div><b>End-to-End Analytics</b><small>Data cleaning, DAX, PivotTables &amp; SQL</small></div></div>
+        <div class="stripitem"><span class="stripicon">⌕</span><div><b>Business &amp; Academic Rigor</b><small>MS Business Informatics &amp; BBA</small></div></div>
+      </div>
+    </div>
+
+    <!-- SECTION 1: ABOUT ME -->
+    <section id="about">
+      <div class="container aboutgrid">
+        <div>
+          <span class="label">Section 01 / About Me</span>
+          <h2 class="sectiontitle">Education, experience &amp; career focus.</h2>
+          <p>I am <strong>Mahmood Ali</strong>, a Data &amp; Business Analyst combining formal training in <strong>Business Informatics</strong> and <strong>Business Administration</strong> with hands-on operational experience. I bridge the gap between raw datasets and executive decision-making through structured querying, automated reporting, and evidence-based research.</p>
+          <div class="aboutlist">
+            <p><span class="tick">✓</span><span><strong>Operational Experience:</strong> Hands-on experience managing inventory, sales tracking, and operational workflows in agribusiness and commercial environments.</span></p>
+            <p><span class="tick">✓</span><span><strong>Career Interests:</strong> Seeking Data Analyst, Business Intelligence (BI) Analyst, and Research Analyst roles where SQL, Power BI, and Excel drive measurable business outcomes.</span></p>
+            <p><span class="tick">✓</span><span><strong>Analytical Communication:</strong> Committed to clean documentation, reproducible data pipelines, and clear visual storytelling for stakeholders.</span></p>
+          </div>
+        </div>
+        <div class="aboutcard">
+          <h3>Education &amp; Technical Stack</h3>
+          <div class="edu-item">
+            <b>Master of Science (MS) in Business Informatics</b>
+            <span>Focus: Data Analytics, Information Systems &amp; Quantitative Research</span>
+          </div>
+          <div class="edu-item">
+            <b>Bachelor of Business Administration (BBA)</b>
+            <span>Focus: Business Management, Operations &amp; Marketing Strategy</span>
+          </div>
+          <h3 style="margin-top:22px">Core Competencies</h3>
+          <div class="skillcloud">
+            <span class="skill">SQL (PostgreSQL / MySQL)</span>
+            <span class="skill">Power BI Desktop</span>
+            <span class="skill">DAX &amp; Power Query</span>
+            <span class="skill">Microsoft Excel</span>
+            <span class="skill">PivotTables &amp; VBA</span>
+            <span class="skill">KPI Design</span>
+            <span class="skill">Data Cleaning</span>
+            <span class="skill">Business Research</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SQL PROJECTS -->
+    <section class="alt-bg" id="sql">
+      <div class="container">
+        <div class="sectiontop">
+          <div>
+            <span class="label">Section 02 / SQL Projects</span>
+            <h2 class="sectiontitle">SQL queries, datasets &amp; relational analysis.</h2>
+            <p class="sectext">Structured database querying using joins, CTEs, window functions, and aggregations to extract actionable business insights from raw relational datasets.</p>
+          </div>
+          <a href="https://github.com/mahmoodchannar-del" target="_blank" rel="noopener noreferrer" class="btn secondary" style="border-color:#cbd5e1;color:var(--navy);background:#fff">View GitHub Repositories ↗</a>
+        </div>
+
+        <div class="sql-placeholder">
+          <div>
+            <span class="projectnum">SQL Portfolio · Repository Showcase</span>
+            <h3 style="margin:6px 0 12px;font-size:21px">Relational Data Exploration &amp; Business Case Queries</h3>
+            <p style="color:var(--muted);font-size:14.5px;margin:0 0 16px">Dedicated SQL case studies covering retail sales cohort analysis, customer retention metrics, and inventory turnover optimization are being published to GitHub. Each project includes schema documentation, clean `.sql` scripts, and business takeaways.</p>
+            <div class="insights-box">
+              <strong>Key SQL Techniques Applied</strong>
+              CTEs (Common Table Expressions), Window Functions (<code>RANK</code>, <code>LAG</code>, running totals), Multi-table Joins, Subqueries, and Data Cleaning/Normalization.
+            </div>
+            <div class="tags">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Window Functions</span>
+              <span class="tag">CTEs</span>
+              <span class="tag">Exploratory Data Analysis</span>
+            </div>
+          </div>
+          <div class="sql-code" aria-label="Sample SQL Query">
+<span class="cm">-- Sample: Regional Revenue &amp; Target Attainment</span>
+<span class="kw">WITH</span> RegionalSales <span class="kw">AS</span> (
+  <span class="kw">SELECT</span>
+    city,
+    <span class="kw">SUM</span>(revenue) <span class="kw">AS</span> total_revenue,
+    <span class="kw">SUM</span>(target) <span class="kw">AS</span> total_target
+  <span class="kw">FROM</span> sales_transactions
+  <span class="kw">GROUP BY</span> city
+)
+<span class="kw">SELECT</span>
+  city,
+  total_revenue,
+  <span class="kw">ROUND</span>((total_revenue / total_target) * 100, 1) <span class="kw">AS</span> attainment_pct,
+  <span class="kw">RANK</span>() <span class="kw">OVER</span> (<span class="kw">ORDER BY</span> total_revenue <span class="kw">DESC</span>) <span class="kw">AS</span> city_rank
+<span class="kw">FROM</span> RegionalSales;
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: POWER BI PROJECTS -->
+    <section id="powerbi">
+      <div class="container">
+        <div class="sectiontop">
+          <div>
+            <span class="label">Section 03 / Power BI Projects</span>
+            <h2 class="sectiontitle">Interactive dashboards, KPIs &amp; DAX modeling.</h2>
+            <p class="sectext">End-to-end Business Intelligence solutions featuring Power Query ETL pipelines, star-schema data models, custom DAX measures, and executive dashboard visuals.</p>
+          </div>
+        </div>
+        <div class="cards two-col">
+          <article class="card">
+            <div class="cover mdcat"><span class="labelchip">POWER BI · DAX</span><div class="coverblock" aria-hidden="true"><div class="minihead"><span></span><span></span></div><div class="minichart"><i style="height:57%"></i><i style="height:85%"></i><i style="height:67%"></i><i style="height:92%"></i><i style="height:76%"></i><i style="height:49%"></i></div><div class="minifoot"></div></div></div>
+            <div class="cardbody">
+              <span class="projectnum">Education Analytics · 2026</span>
+              <h3>MDCAT Candidate Performance Analysis</h3>
+              <p>Comprehensive evaluation of candidate examination results, pass/qualification rates, score distributions, and district-level performance disparities.</p>
+              <div class="insights-box">
+                <strong>KPIs &amp; Business Insights</strong>
+                Tracked Total Candidates, Qualification Rate (%), Mean vs. Median Score, and Top-Performing Districts using custom DAX measures and drill-through filters.
+              </div>
+              <div class="tags"><span class="tag">Power BI</span><span class="tag">Power Query ETL</span><span class="tag">DAX Measures</span><span class="tag">KPI Cards</span></div>
+              <a class="cardlink" href="https://github.com/mahmoodchannar-del/MDCAT-2026_Power-BI_Analysis" target="_blank" rel="noopener noreferrer">View Dashboard Screenshots &amp; PBIX on GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cover pbi"><span class="labelchip">POWER BI · SALES</span><div class="coverblock" aria-hidden="true"><div class="minihead"><span></span><span></span></div><div class="minichart"><i style="height:54%"></i><i style="height:80%"></i><i style="height:65%"></i><i style="height:95%"></i><i style="height:70%"></i><i style="height:60%"></i></div><div class="minifoot"></div></div></div>
+            <div class="cardbody">
+              <span class="projectnum">Retail &amp; Commercial Analytics</span>
+              <h3>Mobile Sales Performance Dashboard</h3>
+              <p>Multi-page interactive sales dashboard analyzing revenue trends across smartphone brands, models, payment methods, customer ratings, and seasonal months.</p>
+              <div class="insights-box">
+                <strong>KPIs &amp; Business Insights</strong>
+                Monitored Total Revenue, Units Sold, Average Selling Price (ASP), and MoM Growth to identify high-margin brands and preferred customer payment channels.
+              </div>
+              <div class="tags"><span class="tag">Power BI</span><span class="tag">Sales KPIs</span><span class="tag">Time Intelligence</span><span class="tag">Visual Storytelling</span></div>
+              <a class="cardlink" href="https://github.com/mahmoodchannar-del/Mobile-Sales-Power-BI-Dashboard" target="_blank" rel="noopener noreferrer">View Dashboard Screenshots &amp; PBIX on GitHub ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: EXCEL PROJECTS -->
+    <section class="alt-bg" id="excel">
+      <div class="container">
+        <div class="sectiontop">
+          <div>
+            <span class="label">Section 04 / Excel Projects</span>
+            <h2 class="sectiontitle">Excel dashboards, PivotTables &amp; business analysis.</h2>
+            <p class="sectext">Dynamic spreadsheet models built for rapid managerial reporting, variance analysis, and automated KPI tracking.</p>
+          </div>
+        </div>
+        <div class="cards two-col">
+          <article class="card">
+            <div class="cover excel"><span class="labelchip">EXCEL · PIVOTTABLES</span><div class="coverblock" aria-hidden="true"><div class="minihead"><span></span><span></span></div><div class="minichart"><i style="height:70%"></i><i style="height:42%"></i><i style="height:82%"></i><i style="height:65%"></i><i style="height:95%"></i><i style="height:55%"></i></div><div class="minifoot"></div></div></div>
+            <div class="cardbody">
+              <span class="projectnum">Regional Sales &amp; Variance Analysis</span>
+              <h3>Pakistan Sales Performance Dashboard</h3>
+              <p>Interactive Excel management dashboard tracking sales executive performance, revenue targets, and target shortfalls across eight major cities in Pakistan.</p>
+              <div class="insights-box">
+                <strong>Analytical Methods &amp; Insights</strong>
+                Built with structured Excel Tables, dynamic PivotTables, connected City Slicers, and conditional formatting to pinpoint underperforming territories and top sales reps.
+              </div>
+              <div class="tags"><span class="tag">Microsoft Excel</span><span class="tag">PivotTables</span><span class="tag">Dynamic Slicers</span><span class="tag">Variance Analysis</span></div>
+              <a class="cardlink" href="https://github.com/mahmoodchannar-del/Pakistan-Sales-Performance-Dashboard" target="_blank" rel="noopener noreferrer">Download Excel Workbook &amp; Docs on GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="card" style="border-style:dashed;background:#fbfdff">
+            <div class="cardbody" style="justify-content:center">
+              <span class="projectnum">Excel Modeling Capabilities</span>
+              <h3>Financial &amp; Operational Spreadsheet Solutions</h3>
+              <p>Beyond dashboard reporting, my Excel workflow emphasizes audit-ready structure and automation for business operations:</p>
+              <div class="insights-box">
+                <strong>Core Excel Toolkit</strong>
+                <code>XLOOKUP</code> / <code>INDEX-MATCH</code>, <code>SUMIFS</code>, Power Query data transformation, Data Validation rules, and automated KPI summary templates.
+              </div>
+              <div class="tags"><span class="tag">Power Query</span><span class="tag">XLOOKUP</span><span class="tag">Data Cleaning</span><span class="tag">KPI Templates</span></div>
+              <a class="cardlink" href="https://github.com/mahmoodchannar-del" target="_blank" rel="noopener noreferrer">Explore All Repositories on GitHub ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: RESEARCH & ACADEMIC PROJECTS -->
+    <section id="research">
+      <div class="container">
+        <div class="sectiontop">
+          <div>
+            <span class="label">Section 05 / Research &amp; Academic Projects</span>
+            <h2 class="sectiontitle">Research papers, university projects &amp; PDFs.</h2>
+            <p class="sectext">Empirical and literature-based research connecting data analytics, artificial intelligence, digital marketing, and consumer psychology.</p>
+          </div>
+        </div>
+        <div class="researchgrid">
+          <article class="paper">
+            <div class="papericon" aria-hidden="true">📄</div>
+            <div>
+              <small>Published Empirical Research · AI &amp; E-Commerce</small>
+              <h3>How Artificial Intelligence and Big Data Are Shaping Hyper-Personalized Marketing Campaigns in E-Commerce</h3>
+              <p>Examines how predictive analytics, machine learning algorithms, and big data architectures drive customer segmentation, recommendation engines, and conversion optimization in e-commerce.</p>
+              <span class="paper-meta">Published Article · PDF / Repository Link Ready</span>
+            </div>
+          </article>
+          <article class="paper">
+            <div class="papericon" aria-hidden="true">📄</div>
+            <div>
+              <small>Graduate Research · Consumer Behaviour</small>
+              <h3>The Effects of Outward and Inward Negative Emotions on Consumers' Desire for Revenge and Negative Word of Mouth</h3>
+              <p>Quantitative behavioral study analyzing how service failures trigger distinct emotional responses and influence post-purchase complaint behavior and brand reputation.</p>
+              <span class="paper-meta">Academic Study · Quantitative Survey Analysis</span>
+            </div>
+          </article>
+        </div>
+        <p style="margin-top:20px;color:var(--muted);font-size:13px">Note: Upload full-text PDFs to a <code>papers/</code> directory in your GitHub repository to enable direct one-click PDF downloads for recruiters.</p>
+      </div>
+    </section>
+
+    <section class="contactsection" id="contact">
+      <div class="container">
+        <div class="contactbox">
+          <div>
+            <h2>Ready to discuss Data Analyst &amp; BI roles?</h2>
+            <p>Connect with me on LinkedIn or review my code and dashboards on GitHub to see how I can add analytical value to your team.</p>
+          </div>
+          <div class="buttons">
+            <a href="https://www.linkedin.com/in/mahmood-ali-308992435" target="_blank" rel="noopener noreferrer" class="btn primary">Connect on LinkedIn <span class="arrow">↗</span></a>
+            <a href="https://github.com/mahmoodchannar-del" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub Profile <span class="arrow">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <span>© <span id="year">2026</span> Mahmood Ali Analytics. Built for clear, recruiter-ready portfolio review.</span>
+      <span>
+        <a href="#about">About Me</a> &nbsp;·&nbsp;
+        <a href="#sql">SQL</a> &nbsp;·&nbsp;
+        <a href="#powerbi">Power BI</a> &nbsp;·&nbsp;
+        <a href="#excel">Excel</a> &nbsp;·&nbsp;
+        <a href="#research">Research</a> &nbsp;·&nbsp;
+        <a href="#top">Back to top ↑</a>
+      </span>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
